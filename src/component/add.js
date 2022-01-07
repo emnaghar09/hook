@@ -3,7 +3,7 @@ import {Modal, Button, Form} from 'react-bootstrap';
 import {useState} from 'react';
 
 function Add({handlerMovie}) {
-    // imported
+    // imported for the form group
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);

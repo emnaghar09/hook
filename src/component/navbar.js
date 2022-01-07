@@ -1,6 +1,8 @@
 import React from 'react'
 import {Navbar,Nav,Container} from 'react-bootstrap'; 
-import './navbar.css';
+import {Link} from 'react-router-dom'
+
+//import './navbar.css';
 function navbar() {
     return (
         <div>
@@ -8,11 +10,18 @@ function navbar() {
   <Container className='navbar'>
 
 
-        <Nav.Link href="#action1" className="item">Reality shows</Nav.Link>
-        <Nav.Link href="#action1"  className="item">Movies </Nav.Link>
-        <Nav.Link href="#action1" className="item" >Cartoons</Nav.Link>
-        <Nav.Link href="#action1"  className="item">Series</Nav.Link>
-        
+
+    <Navbar.Brand href="#home">MOVIES THEATER</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link as={Link} to='/'>Home</Nav.Link>
+        <Nav.Link as={Link} to='/MovieList'>Movie List</Nav.Link>
+   
+  
+      </Nav>
+    </Navbar.Collapse>
+
   
     
   </Container>

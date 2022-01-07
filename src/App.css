@@ -1,8 +1,12 @@
-.App {
+.App {display: flex;
   text-align: center;
-  background-image: url(./component/movies/cinema-wallpaper-social-media-message-background-vector.jpg);
+  background-image: url(https://i.pinimg.com/736x/8a/6d/41/8a6d4130ab66fd5aa48d3464bb951e87--macbook-wallpaper-dress-your-tech.jpg);
+  /* (./component/movies/cinema-wallpaper-social-media-message-background-vector.jpg); */
   -webkit-animation: backgroundScroll 20s linear infinite;
 animation: backgroundScroll 20s linear infinite;
+flex-direction: column;
+    align-content: center;
+    align-items: center;
 
 }
 
@@ -31,7 +35,23 @@ to {background-position: -400px 0;}
 .card{
   margin : 20px;
 }
-h1{color: white;}
-.rate{
+h1{color: green}
+
+
+.filter {
   width: 50%;
+  display: flex;
+  padding: 5rem;
+  margin: 0 auto;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: aliceblue;
+  width: 50rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }

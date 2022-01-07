@@ -1,16 +1,16 @@
 
 .descript{
-    color:rgb(24, 24, 180);
+    color:black;
     font-weight: bold;
     width: 250px;
     height: 300px;
     text-align: justify;
-    font-size:medium;
+    font-size:small;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5%;
 }
 .title{
-    background-color:blue;
+    background-color:darkblue;
     color: aliceblue;
     font-size: xx-large;
 }
@@ -25,6 +25,7 @@ align-items:center;
     display:flex;
     
 align-items:center;
+
 }
 .genre{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -1,11 +1,13 @@
 import React from 'react'
-import './list.css'
+
 import MovieCard from './MovieCard';
 
-function MovieList({movieList}) {
+function MovieList({movieList, search}) {
+    
     return (
 <div className="movieList">
-    { movieList.map((el, key)=> <MovieCard key={key} movie={el}/>)}
+    { movieList.filter(el=>el.title.toUpperCase().includes(search.toUpperCase().trim()))
+    .map((el, key)=> <MovieCard key={key} movie={el}/>)}
 </div>
 
     )}

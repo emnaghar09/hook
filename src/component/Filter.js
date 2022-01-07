@@ -1,9 +1,12 @@
 import React from 'react';
 import Rating from './rating';
 import {FormControl, InputGroup} from 'react-bootstrap'; 
-import './filter.css'
 
-function Filter() {
+
+
+
+function Filter({setsearch}) {
+
     return (
         <div className='filter'>
          <InputGroup className="mb-3">
@@ -12,6 +15,7 @@ function Filter() {
       placeholder="search movie by name/rating"
       aria-label="Username"
       aria-describedby="basic-addon1"
+     onChange={(e)=>setsearch(e.target.value)} 
     />
   </InputGroup>
       <Rating/>
